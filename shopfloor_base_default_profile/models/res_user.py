@@ -7,7 +7,5 @@ class ResUsers(models.Model):
     _inherit = "res.users"
 
     shopfloor_default_profile_ids = fields.One2many(
-        "shopfloor.app.user.profile",
-        "user_id",
-        string="Shopfloor App Default Profiles"
+        "shopfloor.app.user.profile", "user_id", string="Shopfloor App Default Profiles"
     )

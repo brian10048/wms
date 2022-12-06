@@ -27,7 +27,7 @@ class TestDefaultProfileCase(CommonCase):
     def _user_default_profile_values(cls):
         return {
             "shopfloor_app_id": cls.shopfloor_app.id,
-            "profile_id" : cls.env.ref("shopfloor_base.profile_demo_2").id,
+            "profile_id": cls.env.ref("shopfloor_base.profile_demo_2").id,
         }
 
     def test_make_app_info_default_profile(self):

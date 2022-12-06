@@ -12,8 +12,8 @@
                         groups="shopfloor_base.group_shopfloor_manager"
                     >
                         <tree editable="bottom">
-                            <field name="shopfloor_app_id"/>
-                            <field name="profile_id"/>
+                            <field name="shopfloor_app_id" />
+                            <field name="profile_id" />
                         </tree>
                     </field>
                 </group>
@@ -33,8 +33,8 @@
                         groups="shopfloor_base.group_shopfloor_manager"
                     >
                         <tree editable="bottom">
-                            <field name="shopfloor_app_id"/>
-                            <field name="profile_id"/>
+                            <field name="shopfloor_app_id" />
+                            <field name="profile_id" />
                         </tree>
                     </field>
                 </group>
@@ -58,8 +58,8 @@
                         groups="shopfloor_base.group_shopfloor_manager"
                     >
                         <tree editable="bottom">
-                            <field name="shopfloor_app_id"/>
-                            <field name="profile_id"/>
+                            <field name="shopfloor_app_id" />
+                            <field name="profile_id" />
                         </tree>
                     </field>
                 </group>

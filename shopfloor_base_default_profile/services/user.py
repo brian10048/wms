@@ -2,8 +2,9 @@
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
 from odoo.addons.component.core import Component
 
+
 class ShopfloorUser(Component):
-    _inherit ="shopfloor.user"
+    _inherit = "shopfloor.user"
 
     @property
     def _user_info_parser(self):
@@ -12,9 +13,13 @@ class ShopfloorUser(Component):
             ("shopfloor_default_profile_ids:default_profile", self._user_profile_parser)
         )
         return res
-    
+
     def _user_profile_parser(self, rec, fname):
-        profile = rec[fname].filtered(lambda x: x.shopfloor_app_id == self.collection.id).profile_id
+        profile = (
+            rec[fname]
+            .filtered(lambda x: x.shopfloor_app_id == self.collection.id)
+            .profile_id
+        )
         if not profile:
             return
         profiles_comp = self.component("profile")

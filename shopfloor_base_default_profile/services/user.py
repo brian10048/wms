@@ -14,7 +14,7 @@ class ShopfloorUser(Component):
         return res
     
     def _user_profile_parser(self, rec, fname):
-        profile = rec[fname].search([("shopfloor_app_id", "=", self.collection.id)], limit=1).profile_id
+        profile = rec[fname].filtered(lambda x: x.shopfloor_app_id == self.collection.id).profile_id
         if not profile:
             return
         profiles_comp = self.component("profile")

@@ -9,3 +9,11 @@ class ShopfloorAppUserProfile(models.Model):
     user_id = fields.Many2one("res.users", string="User")
     shopfloor_app_id = fields.Many2one("shopfloor.app", string="Shopfloor App")
     profile_id = fields.Many2one("shopfloor.profile", string="Shopfloor Default Profile")
+
+    _sql_constraints = [
+        (
+            "unique_app_profile",
+            "unique (user_id, shopfloor_app_id)",
+            "A user can only have one default profile per shopfloor app"
+        )
+    ]

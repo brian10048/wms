@@ -52,7 +52,7 @@ class BaseShopfloorService(AbstractComponent):
         if not record:
             raise exceptions.MissingError(
                 _("The record {model} {_id} does not exist").format(
-                    model = self._expose_model, _id=_id
+                    model = self._expose_model, _id=_id)
             )
         else:
             return record

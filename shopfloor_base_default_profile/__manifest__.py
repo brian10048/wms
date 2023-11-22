@@ -1,7 +1,7 @@
 {
     "name": "Shopfloor Base - Default Profile",
     "summary": "Adds a default profile mechanism for shopfloor",
-    "version": "15.0.1.0.0",
+    "version": "16.0.1.0.0",
     "development_status": "Alpha",
     "depends": ["shopfloor_base", "shopfloor_mobile_base"],
     "author": "Brian McMaster, Odoo Community Association (OCA)",
